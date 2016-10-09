@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "762851097178",
+    "firebase_url": "https://liga-wkhl.firebaseio.com",
+    "project_id": "liga-wkhl",
+    "storage_bucket": "liga-wkhl.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762851097178:android:89cd5753088268ab",
+        "android_client_info": {
+          "package_name": "com.flc.app3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "762851097178-o2blhrbole5018c5nf1r5itemgh4nrto.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhZreHthNiQBSvj_fx_PCGuPhOV0cy1gM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
