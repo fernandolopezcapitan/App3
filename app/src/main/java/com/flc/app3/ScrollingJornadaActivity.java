@@ -1,5 +1,6 @@
 package com.flc.app3;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -33,5 +34,14 @@ public class ScrollingJornadaActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });*/
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+        Intent intent = new Intent(this,TabsActivity.class);
+        startActivity(intent);
+        this.finish();
     }
 }

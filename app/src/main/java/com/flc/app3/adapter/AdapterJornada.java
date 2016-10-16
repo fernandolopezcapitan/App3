@@ -42,11 +42,11 @@ public class AdapterJornada extends RecyclerView.Adapter<AdapterJornada.JornadaV
             mView = v;
             tv_nombre_jornada = (TextView) v.findViewById(R.id.tv_nombre_jornada);
             tv_puntos = (TextView) v.findViewById(R.id.tv_puntos);
-            tv_ejercito1 = (TextView) v.findViewById(R.id.tv_ejercito1);
-            tv_ejercito2 = (TextView) v.findViewById(R.id.tv_ejercito2);
-            tv_ejercito3 = (TextView) v.findViewById(R.id.tv_ejercito3);
-            tv_ejercito4 = (TextView) v.findViewById(R.id.tv_ejercito4);
-            tv_ejercito5 = (TextView) v.findViewById(R.id.tv_ejercito5);
+            tv_ejercito1 = (TextView) v.findViewById(R.id.tv_jugador1);
+            tv_ejercito2 = (TextView) v.findViewById(R.id.tv_jugador2);
+            tv_ejercito3 = (TextView) v.findViewById(R.id.tv_jugador3);
+            tv_ejercito4 = (TextView) v.findViewById(R.id.tv_jugador4);
+            tv_ejercito5 = (TextView) v.findViewById(R.id.tv_jugador5);
             tv_jugado = (TextView) v.findViewById(R.id.tv_jugado);
             //imagenCiudad = (ImageView)v.findViewById(R.id.imagen_ciudad);
         }
@@ -75,11 +75,11 @@ public class AdapterJornada extends RecyclerView.Adapter<AdapterJornada.JornadaV
         // - replace the contents of the view with that element
         /*holder.tv_nombre_jornada.setText(mDataset.get(i).getNombre());
         holder.tv_puntos.setText(mDataset.get(i).getPts());
-        holder.tv_ejercito1.setText(mDataset.get(i).getEj1());
-        holder.tv_ejercito2.setText(mDataset.get(i).getEj2());
-        holder.tv_ejercito3.setText(mDataset.get(i).getEj3());
-        holder.tv_ejercito4.setText(mDataset.get(i).getEj4());
-        holder.tv_ejercito5.setText(mDataset.get(i).getE5());
+        holder.tv_jugador1.setText(mDataset.get(i).getEj1());
+        holder.tv_jugador2.setText(mDataset.get(i).getEj2());
+        holder.tv_jugador3.setText(mDataset.get(i).getEj3());
+        holder.tv_jugador4.setText(mDataset.get(i).getEj4());
+        holder.tv_jugador5.setText(mDataset.get(i).getE5());
         holder.tv_jugado.setText(mDataset.get(i).getComment());*/
         //holder.mTextView.setText(mDataset.get(i).getCiudad());
         //holder.imagenCiudad.setImageResource(mDataset.get(i).getImagen());

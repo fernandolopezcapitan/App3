@@ -10,8 +10,8 @@
         android:id="@+id/textViewEjemplo"
         android:layout_height="match_parent"
         android:text="Jornadas" />-->
-    <ListView
-        android:id="@+id/listView"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_Jornadas"
         android:scrollbars="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

@@ -97,6 +97,7 @@ public class Jornada {
         result.put("jugVisi2", jugVisi2);
         result.put("descansa", descansa);
         result.put("jugada", jugada);
+        result.put("commentJugada",commentJugada);
         result.put("ejerLocal1", ejerLocal1);
         result.put("ejerVisi1", ejerVisi1);
         result.put("mapa1", mapa1);

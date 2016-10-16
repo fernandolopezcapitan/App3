@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         title = (EditText) findViewById(R.id.id_title);
 
         //Desabilitar boton de meter datos
-        meterDatos.setEnabled(false);
+        //meterDatos.setEnabled(false);
 
         ir.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,13 +96,8 @@ public class MainActivity extends AppCompatActivity {
 
         //writeNewPost(userIdText,usernameText,titleText,bodyText);
         //writeNewUser(userIdText,nameText,emailText);
-        //Batalla batalla1 = new Batalla(205,"Altos elfos","Enanos", "20/12/2003",true,"Jky","Ale C.","Línea de batalla",17,3,"Altos elfos","-");
-        //Batalla batalla2 = new Batalla(350,"Bretonia", "Condes vampiros", "31/02/2010", true, "Capi", "Ale C.", "Encuentro fortuito", 15,5,"Bretonia","-");
-
-
-        //Jornada j1 = new Jornada("Torneo de Montfort", "", "especial", "","","Todos","Todos","Nadie",false,"Inicio de la IV liga","","","Ciudad de Montfort","Por determinar",0,0,0,"01/01/2016","link","Comentario1","Todos","Todos","Ciudad de Montfort","Por determinar",0,0,0,"01/01/2016","link","Comentario2");
-        Jornada j1 = new Jornada();
-        j1.setNombre("Jornada 12");
+         Jornada j1 = new Jornada();
+        j1.setNombre("Jornada 13");
         j1.setImg("");
         j1.setPtsEncabezado("2500 puntos");
 

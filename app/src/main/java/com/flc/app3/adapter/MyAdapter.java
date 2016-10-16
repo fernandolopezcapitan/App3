@@ -45,11 +45,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.JornadaViewHolder>
             mView = v;
             tv_nombre_jornada = (TextView) v.findViewById(R.id.tv_nombre_jornada);
             tv_puntos = (TextView) v.findViewById(R.id.tv_puntos);
-            tv_ejercito1 = (TextView) v.findViewById(R.id.tv_ejercito1);
-            tv_ejercito2 = (TextView) v.findViewById(R.id.tv_ejercito2);
-            tv_ejercito3 = (TextView) v.findViewById(R.id.tv_ejercito3);
-            tv_ejercito4 = (TextView) v.findViewById(R.id.tv_ejercito4);
-            tv_ejercito5 = (TextView) v.findViewById(R.id.tv_ejercito5);
+            tv_ejercito1 = (TextView) v.findViewById(R.id.tv_jugador1);
+            tv_ejercito2 = (TextView) v.findViewById(R.id.tv_jugador2);
+            tv_ejercito3 = (TextView) v.findViewById(R.id.tv_jugador3);
+            tv_ejercito4 = (TextView) v.findViewById(R.id.tv_jugador4);
+            tv_ejercito5 = (TextView) v.findViewById(R.id.tv_jugador5);
             tv_jugado = (TextView) v.findViewById(R.id.tv_jugado);
 
             //imagenCiudad = (ImageView)v.findViewById(R.id.imagen_ciudad);
