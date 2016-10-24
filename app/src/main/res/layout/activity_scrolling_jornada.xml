@@ -25,7 +25,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/logoconletra"
+                android:src="@drawable/ic_nofound"
                 android:id="@+id/img_logo_scroll"/>
 
             <android.support.v7.widget.Toolbar

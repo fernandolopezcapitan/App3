@@ -3,6 +3,7 @@ package com.flc.app3.pojo;
 import com.google.firebase.database.Exclude;
 import com.google.firebase.database.IgnoreExtraProperties;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,7 +12,7 @@ import java.util.Map;
  */
 
 @IgnoreExtraProperties
-public class Jornada {
+public class Jornada{
 
     public String nombre;
     public String img;

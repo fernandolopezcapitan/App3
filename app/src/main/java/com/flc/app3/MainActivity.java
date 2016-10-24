@@ -97,21 +97,21 @@ public class MainActivity extends AppCompatActivity {
         //writeNewPost(userIdText,usernameText,titleText,bodyText);
         //writeNewUser(userIdText,nameText,emailText);
          Jornada j1 = new Jornada();
-        j1.setNombre("Jornada 13");
-        j1.setImg("");
-        j1.setPtsEncabezado("2500 puntos");
+        j1.setNombre("Jornada 3");
+        j1.setImg("https://firebasestorage.googleapis.com/v0/b/liga-wkhl.appspot.com/o/torneomontfort.jpg?alt=media&token=73e69551-5095-499a-841a-d66f47011131");
+        j1.setPtsEncabezado("2000 puntos");
 
-        j1.setJugLocal1("Ale C.");
-        j1.setJugVisi1("Ale B.");
+        j1.setJugLocal1("Jky");
+        j1.setJugVisi1("Luisma");
         j1.setJugLocal2("Capi");
-        j1.setJugVisi2("Luisma");
-        j1.setDescansa("Jky");
+        j1.setJugVisi2("Ale B.");
+        j1.setDescansa("Ale C.");
         j1.setJugada(false);
         j1.setCommentJugada("Aún por determinar");
 
         //Enfrentamiento 1
-        j1.setEjerLocal1("Orcos&Goblins");
-        j1.setEjerVisi1("Condes vampiros");
+        j1.setEjerLocal1("Altos elfos");
+        j1.setEjerVisi1("Enanos");
         j1.setMapa1("-");
         j1.setVencedor1("-");
         j1.setPtsLocal1(0);
@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Enfrentamiento 2
         j1.setEjerLocal2("Bretonia");
-        j1.setEjerVisi2("Enanos");
+        j1.setEjerVisi2("Condes vampiros");
         j1.setMapa2("-");
         j1.setVencedor2("-");
         j1.setPtsLocal2(0);

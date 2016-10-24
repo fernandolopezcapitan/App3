@@ -52,6 +52,7 @@
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="() puntos"
                         android:textStyle="italic"
+                        android:layout_marginRight="10dp"
                         android:textAlignment="gravity"
                         android:id="@+id/tv_puntos" />
 
@@ -66,6 +67,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
+                    android:id="@+id/linear1"
                     android:layout_gravity="center_horizontal">
                     <TextView
                         android:layout_width="wrap_content"
@@ -98,6 +100,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
+                    android:id="@+id/linear2"
                     android:layout_gravity="center_horizontal">
                     <TextView
                         android:layout_width="wrap_content"
@@ -130,6 +133,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:id="@+id/linear3"
                     android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"

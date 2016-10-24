@@ -8,83 +8,86 @@
     tools:context="com.flc.app3.ScrollingJornadaActivity"
     tools:showIn="@layout/activity_scrolling_jornada">
 
-    <!-- <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:text="@string/large_text" />-->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="10dp">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="1er enfrentamiento"
-                android:layout_weight="1"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="2000 puntos"
-                android:textStyle="italic"
-                android:textAlignment="gravity"/>
-
-        </LinearLayout>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView5"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/linea_final"/>
+        android:padding="10dp"
+        android:background="@drawable/fondo02">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingBottom="5dp"
-            android:background="@drawable/fondo">
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/fondo01">
+            <!--android:background="@drawable/fondo"-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="1er enfrentamiento"
+                    android:textColor="#040404"
+                    android:paddingLeft="5dp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="2000 puntos"
+                    android:paddingRight="5dp"
+                    android:id="@+id/scroll_j_pts"
+                    android:textColor="#040404"
+                    android:textStyle="italic"
+                    android:textAlignment="gravity"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/linea_final"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"/>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="left|center"
-                android:textSize="17dp"
                 android:paddingLeft="5dp">
                 <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:src="@drawable/ic_highbornelves"
+                    android:id="@+id/scroll_j_iconLocal1"
                     android:paddingRight="5dp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Altos elfos"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Local1"
+                    android:id="@+id/scroll_j_ejLocal1"
                     android:textColor="#040404" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:gravity="center"
-                android:textSize="17dp">
+                android:gravity="center">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="vs"
-                    android:textStyle="italic"
-                    android:textSize="15dp"/>
+                    android:textStyle="italic"/>
 
             </LinearLayout>
             <LinearLayout
@@ -92,18 +95,19 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center|right"
-                android:textSize="17dp"
                 android:paddingRight="5dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Condes vampiro"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Visitante1"
+                    android:id="@+id/scroll_j_ejVis1"
                     android:textColor="#040404"/>
                 <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/ic_vampirecovenant"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_condesvampiros"
+                    android:id="@+id/scroll_j_iconVis1"
                     android:paddingLeft="5dp"/>
             </LinearLayout>
             <ImageView
@@ -113,240 +117,208 @@
                 android:src="@drawable/linea_final"
                 android:paddingRight="10dp"
                 android:paddingLeft="10dp"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:textSize="17dp"
-                android:padding="2dp"
-                android:layout_marginLeft="25dp"
-                android:layout_gravity="center_vertical">
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/ic_mapa"
-                    android:paddingRight="5dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Mapa: "
-                    android:layout_gravity="center_vertical" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Línea de batalla"
-                    android:textStyle="italic"
-                    android:paddingLeft="5dp"
-                    android:layout_gravity="center_vertical" />
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:textSize="17dp"
-                android:padding="1dp"
-                android:layout_marginLeft="25dp"
-                android:layout_gravity="center_vertical">
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/ic_winner"
-                    android:paddingRight="5dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Vencedor: "
-                    android:layout_gravity="center_vertical" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Condes vampiros"
-                    android:textStyle="italic"
-                    android:paddingLeft="5dp"
-                    android:layout_gravity="center_vertical" />
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:textSize="17dp"
-                android:padding="1dp"
-                android:layout_marginLeft="25dp"
-                android:layout_gravity="center_vertical">
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/ic_score"
-                    android:paddingRight="5dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Resultado: "
-                    android:layout_gravity="center_vertical" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="17 - 3"
-                    android:textStyle="italic"
-                    android:paddingLeft="5dp"
-                    android:layout_gravity="center_vertical" />
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:textSize="17dp"
-                android:padding="1dp"
-                android:layout_marginLeft="25dp"
-                android:layout_gravity="center_vertical">
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/ic_dif"
-                    android:paddingRight="5dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Diferencia: "
-                    android:layout_gravity="center_vertical" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="+ 512 puntos"
-                    android:textStyle="italic"
-                    android:paddingLeft="5dp"
-                    android:layout_gravity="center_vertical" />
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:textSize="17dp"
-                android:padding="1dp"
-                android:layout_marginLeft="25dp"
-                android:layout_gravity="center_vertical">
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/ic_date"
-                    android:paddingRight="5dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Fecha: "
-                    android:layout_gravity="center_vertical" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="30/12/2015"
-                    android:textStyle="italic"
-                    android:paddingLeft="5dp"
-                    android:layout_gravity="center_vertical" />
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:textSize="17dp"
-                android:padding="1dp"
-                android:layout_marginLeft="25dp"
-                android:layout_gravity="center_vertical">
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/ic_youtube"
-                    android:paddingRight="5dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Verlo en youtube"
-                    android:textColor="#040404"
-                    android:layout_gravity="center_vertical" />
-
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingTop="10dp">
-            <TextView
+            <TableLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="2º enfrentamiento"
-                android:layout_weight="1"/>
-            <TextView
+                android:layout_gravity="center_horizontal">
+                <TableRow>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_mapa"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_winner"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_score"
+                        android:layout_weight="1"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Mapa1 del keteloxjcpe eofdne kefke"
+                        android:id="@+id/scroll_j_mapa1"
+                        android:textStyle="italic"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="#040404"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Vencedor1"
+                        android:id="@+id/scroll_j_winner1"
+                        android:textStyle="italic"
+                        android:textColor="#040404"
+                        android:layout_gravity="center_vertical"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="0 - 0"
+                        android:id="@+id/scroll_j_resultado1"
+                        android:textStyle="italic"
+                        android:textColor="#040404"
+                        android:layout_gravity="center_vertical"
+                        android:textAlignment="center"/>
+                </TableRow>
+
+
+            </TableLayout>
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="2000 puntos"
-                android:textStyle="italic"
-                android:textAlignment="gravity" />
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/linea_final"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"/>
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+                <TableRow>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_dif"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_date"
+                        android:id="@+id/imageView3"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_youtube"
+                        android:id="@+id/imageView4"
+                        android:layout_weight="1"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="+ 512 puntos"
+                        android:id="@+id/scroll_j_dif1"
+                        android:textStyle="italic"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="#040404"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="30/12/2015"
+                        android:id="@+id/scroll_j_fecha1"
+                        android:textStyle="italic"
+                        android:textColor="#040404"
+                        android:layout_gravity="center_vertical"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Verlo en youtube"
+                        android:id="@+id/scroll_j_youtube1"
+                        android:textStyle="italic"
+                        android:textColor="#040404"
+                        android:layout_gravity="center_horizontal"
+                        android:textAlignment="center"/>
+                </TableRow>
+
+
+            </TableLayout>
 
         </LinearLayout>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/linea_final"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingBottom="5dp"
-            android:background="@drawable/fondo">
+            android:paddingTop="5dp"
+            android:background="@drawable/fondo01">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="2o enfrentamiento"
+                    android:textColor="#040404"
+                    android:paddingLeft="5dp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="2000 puntos"
+                    android:paddingRight="5dp"
+                    android:textColor="#040404"
+                    android:id="@+id/scroll_j_pts"
+                    android:textStyle="italic"
+                    android:textAlignment="gravity"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/linea_final"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"/>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="left|center"
-                android:textSize="17dp"
                 android:paddingLeft="5dp">
                 <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:src="@drawable/ic_highbornelves"
+                    android:id="@+id/scroll_j_iconLocal2"
                     android:paddingRight="5dp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Altos elfos"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Local1"
+                    android:id="@+id/scroll_j_ejLocal2"
                     android:textColor="#040404" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:gravity="center"
-                android:textSize="17dp">
+                android:gravity="center">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="vs"
-                    android:textStyle="italic"
-                    android:textSize="15dp"/>
+                    android:textStyle="italic"/>
 
             </LinearLayout>
             <LinearLayout
@@ -354,18 +326,19 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center|right"
-                android:textSize="17dp"
                 android:paddingRight="5dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Condes vampiro"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Visitante1"
+                    android:id="@+id/scroll_j_ejVis2"
                     android:textColor="#040404"/>
                 <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/ic_vampirecovenant"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_condesvampiros"
+                    android:id="@+id/scroll_j_iconVis2"
                     android:paddingLeft="5dp"/>
             </LinearLayout>
             <ImageView
@@ -375,176 +348,134 @@
                 android:src="@drawable/linea_final"
                 android:paddingRight="10dp"
                 android:paddingLeft="10dp"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:textSize="17dp"
-                android:padding="2dp"
-                android:layout_marginLeft="25dp"
-                android:layout_gravity="center_vertical">
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/ic_mapa"
-                    android:paddingRight="5dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Mapa: "
-                    android:layout_gravity="center_vertical" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Línea de batalla"
-                    android:textStyle="italic"
-                    android:paddingLeft="5dp"
-                    android:layout_gravity="center_vertical" />
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:layout_gravity="center_horizontal">
+                <TableRow>
 
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:textSize="17dp"
-                android:padding="1dp"
-                android:layout_marginLeft="25dp"
-                android:layout_gravity="center_vertical">
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/ic_winner"
-                    android:paddingRight="5dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Vencedor: "
-                    android:layout_gravity="center_vertical" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Condes vampiros"
-                    android:textStyle="italic"
-                    android:paddingLeft="5dp"
-                    android:layout_gravity="center_vertical" />
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_mapa"
+                        android:layout_weight="1"/>
 
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:textSize="17dp"
-                android:padding="1dp"
-                android:layout_marginLeft="25dp"
-                android:layout_gravity="center_vertical">
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/ic_score"
-                    android:paddingRight="5dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Resultado: "
-                    android:layout_gravity="center_vertical" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="17 - 3"
-                    android:textStyle="italic"
-                    android:paddingLeft="5dp"
-                    android:layout_gravity="center_vertical" />
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_winner"
+                        android:layout_weight="1"/>
 
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:textSize="17dp"
-                android:padding="1dp"
-                android:layout_marginLeft="25dp"
-                android:layout_gravity="center_vertical">
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/ic_dif"
-                    android:paddingRight="5dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Diferencia: "
-                    android:layout_gravity="center_vertical" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="+ 512 puntos"
-                    android:textStyle="italic"
-                    android:paddingLeft="5dp"
-                    android:layout_gravity="center_vertical" />
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_score"
+                        android:layout_weight="1"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Mapa1"
+                        android:id="@+id/scroll_j_mapa2"
+                        android:textStyle="italic"
+                        android:textColor="#040404"
+                        android:layout_gravity="center_vertical"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Vencedor1"
+                        android:textColor="#040404"
+                        android:id="@+id/scroll_j_winner2"
+                        android:textStyle="italic"
+                        android:layout_gravity="center_vertical"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="0 - 0"
+                        android:textColor="#040404"
+                        android:id="@+id/scroll_j_resultado2"
+                        android:textStyle="italic"
+                        android:layout_gravity="center_vertical"
+                        android:textAlignment="center"/>
+                </TableRow>
 
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:textSize="17dp"
-                android:padding="1dp"
-                android:layout_marginLeft="25dp"
-                android:layout_gravity="center_vertical">
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/ic_date"
-                    android:paddingRight="5dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Fecha: "
-                    android:layout_gravity="center_vertical" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="30/12/2015"
-                    android:textStyle="italic"
-                    android:paddingLeft="5dp"
-                    android:layout_gravity="center_vertical" />
 
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
+            </TableLayout>
+            <ImageView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:textSize="17dp"
-                android:padding="1dp"
-                android:layout_marginLeft="25dp"
-                android:layout_gravity="center_vertical">
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/ic_youtube"
-                    android:paddingRight="5dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Verlo en youtube"
-                    android:textColor="#040404"
-                    android:layout_gravity="center_vertical" />
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/linea_final"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"/>
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+                <TableRow>
 
-            </LinearLayout>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_dif"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_date"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_youtube"
+                        android:layout_weight="1"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="+ 512 puntos"
+                        android:id="@+id/scroll_j_dif2"
+                        android:textColor="#040404"
+                        android:textStyle="italic"
+                        android:layout_gravity="center_vertical"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="30/12/2015"
+                        android:id="@+id/scroll_j_fecha2"
+                        android:textStyle="italic"
+                        android:textColor="#040404"
+                        android:layout_gravity="center_vertical"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Verlo en youtube"
+                        android:textColor="#040404"
+                        android:id="@+id/scroll_j_youtube2"
+                        android:textStyle="italic"
+                        android:layout_gravity="center_horizontal"
+                        android:textAlignment="center"/>
+                </TableRow>
+
+
+            </TableLayout>
+
         </LinearLayout>
-
-
 
     </LinearLayout>
 
